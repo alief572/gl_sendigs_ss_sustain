@@ -57,8 +57,7 @@ class Multi_bum extends CI_Controller
 			INNER JOIN coa_master ON coa_master.no_perkiraan=jurnal.no_perkiraan 
             WHERE 
                 (jurnal.tipe = 'BUM' OR jurnal.tipe LIKE'J%')
-                AND jurnal.nomor = '" . $no_bum . "'
-                AND SUBSTR(jurnal.no_perkiraan,1,4) NOT IN ('1102','1101') 
+                AND jurnal.nomor = '" . $no_bum . "' 
             ORDER BY 
                 jurnal.debet DESC
         ";
