@@ -57,11 +57,7 @@ class Multi_bum extends CI_Controller
 			INNER JOIN coa_master ON coa_master.no_perkiraan=jurnal.no_perkiraan 
             WHERE 
                 (jurnal.tipe = 'BUM' OR jurnal.tipe LIKE'J%')
-<<<<<<< HEAD
-                AND jurnal.nomor = '" . $no_bum . "' 
-=======
                 AND jurnal.nomor = '" . $no_bum . "'
->>>>>>> refs/remotes/origin/main
             ORDER BY 
                 jurnal.debet DESC
         ";
