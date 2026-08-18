@@ -61,6 +61,10 @@ class Jurnal extends CI_Controller
 		// 		$thn_aktif			= substr($tgl_periode_aktif, 3, 4);
 		// 	}
 		// }
+
+		// print_r($thn_aktif . ' - ' . $bln_aktif);
+		// exit;
+
 		$data['data_listjv']		= $this->Jurnal_model->list_jv($bln_aktif, $thn_aktif);
 
 		$this->load->view('jurnal/v_list_jv', $data);
