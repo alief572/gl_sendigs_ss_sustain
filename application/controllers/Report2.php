@@ -212,9 +212,9 @@ class Report extends CI_Controller {
 			$filter_nokir			= $this->uri->segment(5);
 			$filter_nokir2			= $this->uri->segment(6);			
 
-			$awal=1;
-			$akhir=31;
-			$enol=0;
+			$awal = 1;
+			$akhir = date("t", strtotime($var_tahun . "-" . $var_bulan . "-01"));
+			$enol = 0;
 			if($var_bulan > 9){
 				$var_tgl_awal = $var_tahun."-".$var_bulan."-0".$awal;
 				$var_tgl_akhir = $var_tahun."-".$var_bulan."-".$akhir;
