@@ -918,7 +918,7 @@ class Report extends CI_Controller
 		$filter_nokir2			= $this->uri->segment(6);
 
 		$awal = 1;
-		$akhir = 31;
+		$akhir = date("t", strtotime($var_tahun . "-" . $var_bulan . "-01"));
 		$enol = 0;
 		
 		if ($var_bulan > 9) {
